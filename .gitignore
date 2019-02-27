@@ -1,0 +1,8 @@
+.idea
+target
+.ensime*
+project/project
+project/target
+.sbt
+.ivy2
+
