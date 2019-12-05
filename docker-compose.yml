@@ -1,14 +1,13 @@
 version: '2'
 services:
-    payment:
-        build: paymentservice/.
+    user:
+        build: producerservice/.
         depends_on:
             - kafka
-    myservice:
-        build: myservice/.
+    consumerservice:
+        build: consumerservice/.
         depends_on:
             - kafka
-            - payment
     zookeeper:
         image: confluentinc/cp-zookeeper:5.1.0
         ports:
